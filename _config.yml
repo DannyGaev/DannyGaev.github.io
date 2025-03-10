@@ -17,7 +17,7 @@ title: OakTree's Blog
 description: Most of the projects here are personal interests and open-source -- feel free to mess around with them!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-github_repo: https://github.com/DannyGaev # the GitHub repo name for your project
+github_repo: "" # the GitHub repo name for your project
 github_username: DannyGaev
 
 # Optional social link, you can choose from the following options:
