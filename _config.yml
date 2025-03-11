@@ -13,7 +13,9 @@
 # you will see them accessed via {{ site.title }}, {{ site.github_repo }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Daniel Gaevskiy
+title: |
+    D
+    G
 description: |
     AKA OakTree or FirstOakTree <br /> <br />
     Most of the projects here are personal interests and open-source - feel free to mess around with them!
