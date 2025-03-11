@@ -16,7 +16,7 @@
 title: Daniel Gaevskiy
 description: |
     AKA OakTree or FirstOakTree <br /> <br />
-    Most of the projects here are personal interests and open-source -- feel free to mess around with them!
+    Most of the projects here are personal interests and open-source - feel free to mess around with them!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_repo: "" # the GitHub repo name for your project
