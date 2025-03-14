@@ -7,7 +7,8 @@ layout: page
 {% endif %}
 
 <div class="container mx-auto">
-  {% for post in site.categories[category_name] %}
+  {% assign sorted_pages = site.categories[category_name] | sort:"order" %}
+  {% for post in sorted_pages %}
     {% include post_block.html %}
   {% endfor %}
 </div>
