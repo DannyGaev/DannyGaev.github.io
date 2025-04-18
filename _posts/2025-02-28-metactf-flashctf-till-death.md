@@ -8,6 +8,9 @@ categories: ctfs
 ---
 
 <h1> This is a Question from a MetaCTF FlashCTF </h1>
+<br>
+<br>
+<br>
 <h2> Challenge Question: </h2>
 <p> I was messing with trying to dual boot, and while trying to fix partitions, I accidentally deleted the one on my wedding flash drive I carelessly had plugged in! Please help me recover it! </p>
 
