@@ -2,12 +2,15 @@
 layout: post
 title:  "Cookie Crackdown"
 date:   2025-02-27
-description: "A simpler, obfuscated IRS-themed scam page with some inhibited functionality"
+description: "A Question from a MetaCTF FlashCTF"
 author: "OakTree"
 categories: ctfs
 ---
 
 <h1> This is a Question from a MetaCTF FlashCTF </h1>
+<br>
+<br>
+<br>
 <h2> Challenge Question: </h2>
 <p> We're auditing some websites to check if they're GDPR compliant, and I'm pretty sure this site isn't.. </p>
 
