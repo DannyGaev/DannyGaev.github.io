@@ -7,8 +7,6 @@ author: "OakTree"
 categories: ctfs
 ---
 
-A friend of mine and I received a message from the IRS at nearly the same time. 
-
 <h1> Challenge Question: </h1>
 <p> We're auditing some websites to check if they're GDPR compliant, and I'm pretty sure this site isn't.. </p>
 
