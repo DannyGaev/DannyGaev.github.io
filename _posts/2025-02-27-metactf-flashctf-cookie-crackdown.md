@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "MetaCTF FlashCTF Cookie Crackdown"
+title:  "Cookie Crackdown (MetaCTF FlashCTF)"
 date:   2025-02-27
 description: "A simpler, obfuscated IRS-themed scam page with some inhibited functionality"
 author: "OakTree"
