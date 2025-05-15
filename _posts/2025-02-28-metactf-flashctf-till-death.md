@@ -16,7 +16,7 @@ categories: ctfs
 <h2> Challenge Answer: </h2>
 <p> For this challenge, I used the Autopsy Digital Forensics tool. <p>
 
-*Autopsy can be downloaded for free at https://www.autopsy.com/download/*
+<em> Autopsy can be downloaded for free at https://www.autopsy.com/download/ </em>
 
 <p> On opening Autopsy, I added usb.img as a "Disk Image or VM File" data source. <p>
 
@@ -25,7 +25,7 @@ and text files -- feel free to save them! We won't be using them, they are usele
 
 <p> Navigating through Data Sources => usb.img_1 Host => usb.img => $CarvedFiles (1) we arrive at the 1 (36) folder <p>
 
-**[*] THIS ^ PATH MAY LOOK DIFFERENTLY FOR YOU, BUT SHOULD GENERALLY BE THE SAME**
+<strong> [*] THIS ^ PATH MAY LOOK DIFFERENTLY FOR YOU, BUT SHOULD GENERALLY BE THE SAME </strong>
 
 <p> In this folder, there *many* .fat files. Navigating to the one immediately after f0012446.jpg (f0014031.fat),
 when inspecting the "Strings" tab on the "Text" view, we can see the letters "CTF" have been identified. <p>
