@@ -14,15 +14,13 @@ categories: ctfs
 *The artifact for this problem is a usb.img file*
 
 <h2> Challenge Answer: </h2>
-<p> For this challenge, I used the Autopsy Digital Forensics tool. It can be downloaded for free on the creator's 
-website at: https://www.autopsy.com/download/
+<p> For this challenge, I used the Autopsy Digital Forensics tool. <p>
+*Autopsy can be downloaded for free at https://www.autopsy.com/download/*
 
-On opening Autopsy, I:
-* Created a new case 
-* Added usb.img as a "Disk Image or VM File" data source
+<p> On opening Autopsy, I added usb.img as a "Disk Image or VM File" data source. <p>
 
-When the image is finished loading, we can see several curious things. There are some wedding photos, spreadsheets
-and text files -- feel free to save them! We won't be using them, they are useless.
+<p> When the image is finished loading, we can see several curious things. There are some wedding photos, spreadsheets
+and text files -- feel free to save them! We won't be using them, they are useless. <p>
 
 
 Navigating through Data Sources => usb.img_1 Host => usb.img => $CarvedFiles (1) we arrive at the 1 (36) folder
