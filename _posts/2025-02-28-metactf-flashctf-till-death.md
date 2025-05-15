@@ -15,6 +15,7 @@ categories: ctfs
 
 <h2> Challenge Answer: </h2>
 <p> For this challenge, I used the Autopsy Digital Forensics tool. <p>
+
 *Autopsy can be downloaded for free at https://www.autopsy.com/download/*
 
 <p> On opening Autopsy, I added usb.img as a "Disk Image or VM File" data source. <p>
@@ -22,22 +23,22 @@ categories: ctfs
 <p> When the image is finished loading, we can see several curious things. There are some wedding photos, spreadsheets
 and text files -- feel free to save them! We won't be using them, they are useless. <p>
 
+<p> Navigating through Data Sources => usb.img_1 Host => usb.img => $CarvedFiles (1) we arrive at the 1 (36) folder <p>
 
-Navigating through Data Sources => usb.img_1 Host => usb.img => $CarvedFiles (1) we arrive at the 1 (36) folder
-[*] THIS ^ PATH MAY LOOK DIFFERENTLY FOR YOU, BUT SHOULD GENERALLY BE THE SAME
+**[*] THIS ^ PATH MAY LOOK DIFFERENTLY FOR YOU, BUT SHOULD GENERALLY BE THE SAME**
 
-In this folder, there *many* .fat files. Navigating to the one immediately after f0012446.jpg (f0014031.fat),
-when inspecting the "Strings" tab on the "Text" view, we can see the letters "CTF" have been identified. 
+<p> In this folder, there *many* .fat files. Navigating to the one immediately after f0012446.jpg (f0014031.fat),
+when inspecting the "Strings" tab on the "Text" view, we can see the letters "CTF" have been identified. <p>
 
-YIPPEE!!
+<h2> YIPPEE!! </h2>
 
-Because MetaCTF flags generally follow the format of MetaCTF{some_more_content}, this is a very good sign -- 
+<p> Because MetaCTF flags generally follow the format of MetaCTF{some_more_content}, this is a very good sign -- 
 we've stumbled on the beginning of the some_more_content part of the flag. If we move down the column from here,
 recording the content in the Strings tab sandwiched between a [Z[Z and a [Z[Z (though not the "..."), we are 
-able to assemble the whole flag:
+able to assemble the whole flag: <p>
 
-CTF{N0T_EV3N_D3L3t10n_C4N_S3PART3_U5}
+<p> CTF{N0T_EV3N_D3L3t10n_C4N_S3PART3_U5} <p>
 
-following the rules of the flag format, the flag we want to submit is:
+<p> following the rules of the flag format, the flag we want to submit is: <p>
 
-MetaCTF{N0T_EV3N_D3L3t10n_C4N_S3PART3_U5} </p>
+<p> MetaCTF{N0T_EV3N_D3L3t10n_C4N_S3PART3_U5} </p>
