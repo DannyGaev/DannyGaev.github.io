@@ -5,13 +5,16 @@
 
   <body>
 
+    
     <div>
 
       <header class="header-background">
 
         <div class="clearfix border-bottom-thick header-border">
           <ul class="list-reset right py-1 header-text font-smoothing">
-            {% for my_page in site.pages %}
+            <!-- https://stackoverflow.com/questions/13266369/how-to-change-the-default-order-pages-in-jekyll -->
+            {% assign sorted_pages = site.pages | sort:"order" %}
+            {% for my_page in sorted_pages %}
               {% if my_page.title %}
               <li class="inline-block">
                 <a class="align-middle link-primary header-link mr-2" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
