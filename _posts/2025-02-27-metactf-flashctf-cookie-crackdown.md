@@ -4,7 +4,7 @@ title:  "Cookie Crackdown"
 date:   2025-02-27
 description: "A Question from a MetaCTF FlashCTF"
 author: "OakTree"
-categories: ctfs
+categories: writeups
 ---
 
 <h1> This is a question from a MetaCTF FlashCTF: </h1>
