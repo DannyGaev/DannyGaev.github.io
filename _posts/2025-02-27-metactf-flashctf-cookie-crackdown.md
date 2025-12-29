@@ -7,7 +7,7 @@ author: "OakTree"
 categories: writeups
 ---
 
-<h1> This is a question from a MetaCTF FlashCTF: </h1>
+<h2> This is a question from a MetaCTF FlashCTF: </h2>
 <p> "We're auditing some websites to check if they're GDPR compliant, and I'm pretty sure this site isn't..." </p>
 
 <h2> Challenge Answer: </h2>

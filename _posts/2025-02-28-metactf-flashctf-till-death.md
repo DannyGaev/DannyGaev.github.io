@@ -7,7 +7,7 @@ author: "OakTree"
 categories: writeups
 ---
 
-<h1> This is a question from a MetaCTF FlashCTF: </h1>
+<h2> This is a question from a MetaCTF FlashCTF: </h2>
 
 <p> "I was messing with trying to dual boot, and while trying to fix partitions, I accidentally deleted the one on my wedding flash drive I carelessly had plugged in! Please help me recover it!" </p>
 
