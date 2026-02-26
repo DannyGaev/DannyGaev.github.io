@@ -7,10 +7,29 @@ order: 1
 
 <div id="changes"></div>
 
-You may have caught that em-dash, you'll be seeing more of them. I know it's pretentious, but I cannot let Grok takes that away from me.
+You may have caught that em-dash, you'll be seeing more of them. I know it's pretentious, but I cannot let Grok take that away from me.
 
+My name is Daniel Gaevskiy (shortened here to Gaev for ease of pronunciation). I am a Computer Science-turned-Cybersecurity student, 
+soon to have graduated from university. On this website you can find some of the Projects I've completed, Capture The Flag (CTF) challenges
+I've solved and felt proud enough to write up, and a look at the Competitions I've completed and how I approach them.
 
 <script>
+    function getCookie(cname) {
+            let name = cname + "=";
+            let decodedCookie = decodeURIComponent(document.cookie);
+            let ca = decodedCookie.split(';');
+            for (let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+
     function checkCookie() {
         var title = document.getElementsByClassName("h0 py-4 mt-3");
         var div_changes = document.getElementById("changes");
