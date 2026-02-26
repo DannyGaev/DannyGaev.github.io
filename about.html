@@ -5,8 +5,25 @@ permalink: /about/
 order: 1
 ---
 
+<div id="changes"></div>
+
+You may have caught that em-dash, you'll be seeing more of them. I know it's pretentious, but I cannot let Grok takes that away from me.
+
+
 <script>
-var title = document.getElementsByClassName("h0 py-4 mt-3");
-console.log(title[0].innerHTML);
-title[0].innerHTML = "Hello there!";
+    function checkCookie() {
+        var title = document.getElementsByClassName("h0 py-4 mt-3");
+        var div_changes = document.getElementById("changes");
+        let reoffender = getCookie("reoffender");
+        if (reoffender != "") {
+            title[0].innerHTML = "Welcome back!";
+            div_changes.innerHTML = "It's nice to see you again -- feel free to skip the rest here, it's the same as last time."
+        }
+        else {
+            document.cookie = "reoffender=true";
+            title[0].innerHTML = "Hello There!";
+            div_changes.innerHTML = "I've noticed it's your first time here -- welcome!"
+
+        }
+    }
 </script>
