@@ -1,4 +1,4 @@
-title: Moonwalk
+title: DannyGaev
 author: Daniel Gaevskiy
 url: https://dannygaev.com # root address of the site
 description: > # description of the site (multiple lines allowed)
@@ -31,9 +31,6 @@ theme_config:
     title_projects: Projects
     title_misc_list: Details
     title_blog: Blog
-
-soopr:
-  publish_token: "" # sign up at https://www.soopr.co to get your publish token and personalize share and reaction options
 
 highlighter: rouge
 
