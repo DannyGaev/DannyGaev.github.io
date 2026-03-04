@@ -14,13 +14,12 @@ project_entries:
     desc: A TypoSquatting Minefield
 
   - title: entry.B00M
-    url: entryBoom
+    url: entryboom
     desc: Muddying The Phisher's Net
 
 footer_entries:
   - title: moonwalk's creator's homepage
     url: https://www.abhinav.co
-
 
   - title: github
     url: https://github.com/DannyGaev
