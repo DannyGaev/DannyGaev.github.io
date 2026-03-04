@@ -39,7 +39,7 @@ I've solved and felt proud enough to <a href="https://dannygaev.com/writeups/">W
         }
 
     function checkCookie() {
-        var title = document.getElementsByClassName("h0 py-4 mt-3");
+        var title = document.getElementsByClassName("post-title");
         var div_changes = document.getElementById("changes");
         let reoffender = getCookie("reoffender");
         if (reoffender != "") {
