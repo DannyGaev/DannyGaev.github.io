@@ -3,6 +3,58 @@ layout: post
 title: About
 ---
 
-This is an example page!
+<div id="changes"></div>
+<br>
 
-Actually, it has the same layout of a post...
+You may have caught that em-dash, you'll be seeing more of them. I know it's pretentious, but I cannot let
+<select name="options">
+    <option value="1">Claude</option>
+    <option value="2">Grok</option>
+    <option value="3">ChatGPT</option>
+    <option value="4">Gemini</option>
+</select>
+take that away from me.
+
+<br>
+<br>
+My name is Daniel Gaevskiy (shortened here to Gaev for ease of pronunciation). I am a Computer Science-turned-Cybersecurity student, 
+soon to have graduated from university. On this website you can find some of the <a href="https://dannygaev.com/projects/">Projects</a> I've completed, Capture The Flag (CTF) challenges
+I've solved and felt proud enough to <a href="https://dannygaev.com/writeups/">Write-Up</a>, and a look at the <a href="https://dannygaev.com/competitions/">Competitions</a> I've completed and how I approach them.
+
+<script>
+    function getCookie(cname) {
+            let name = cname + "=";
+            let decodedCookie = decodeURIComponent(document.cookie);
+            let ca = decodedCookie.split(';');
+            for (let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+
+    function checkCookie() {
+        var title = document.getElementsByClassName("h0 py-4 mt-3");
+        var div_changes = document.getElementById("changes");
+        let reoffender = getCookie("reoffender");
+        if (reoffender != "") {
+            title[0].innerHTML = "Welcome back!";
+            div_changes.innerHTML = "It's nice to see you again -- feel free to skip the rest here, it's the same as last time."
+        }
+        else {
+            document.cookie = "reoffender=true";
+            title[0].innerHTML = "Hello There!";
+            div_changes.innerHTML = "I've noticed it's your first time here -- welcome!"
+
+        }
+    }
+    document.addEventListener('DOMContentLoaded', (event) => {
+        checkCookie();
+    });
+
+</script>
