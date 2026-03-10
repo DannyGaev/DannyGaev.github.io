@@ -26,10 +26,10 @@ Pages will change depending on when you visit them, but all the code behind that
 </ol>
 As such, everything you see is available for perusal in your browser -- for instance, here's the information that you as a visitor give to me when you open a website:
 
-<table>
+<table style="width:100%">
   <tr>
-    <th>Attribute</th>
-    <th>Value</th>
+      <th style="width:33.3%">Attribute</th>
+      <th style="width:33.3%">Value</th>
   </tr>
   <tr>
     <td>IP Address</td>
