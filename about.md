@@ -40,6 +40,10 @@ As such, everything you see is available for perusal in your browser -- for inst
     <td id="location"></td>
   </tr>
   <tr>
+        <td>Less Rough Location</td>
+        <td id="llocation"></td>
+    </tr>
+  <tr>
     <td>Browser Language</td>
     <td id="lang"></td>
   </tr>
