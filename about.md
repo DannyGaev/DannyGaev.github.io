@@ -28,8 +28,8 @@ As such, everything you see is available for perusal in your browser -- for inst
 
 <table style="width:100%">
   <tr>
-      <th style="width:33.3%">Attribute</th>
-      <th style="width:33.3%">Value</th>
+      <th style="width:50%">Attribute</th>
+      <th style="width:50%">Value</th>
   </tr>
   <tr>
     <td>IP Address</td>
