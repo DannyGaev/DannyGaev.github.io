@@ -4,9 +4,8 @@ title: About
 ---
 
 <div id="changes"></div>
-<br>
 
-You may have caught that em-dash, you'll be seeing more of them. I know it's pretentious, but I cannot let
+You may have caught that em-dash, you'll be seeing more of them. I know it's pretentious, but I just can't let
 <select name="options">
     <option value="1">Claude</option>
     <option value="2">Grok</option>
@@ -15,7 +14,6 @@ You may have caught that em-dash, you'll be seeing more of them. I know it's pre
 </select>
 take that away from me.
 
-<br>
 <br>
 My name is Daniel Gaevskiy (shortened here to Gaev for ease of pronunciation). I am a Computer Science-turned-Cybersecurity student, 
 soon to have graduated from university. On this website you can find some of the <a href="https://dannygaev.com/projects/">Projects</a> I've completed, Capture The Flag (CTF) challenges
@@ -34,28 +32,20 @@ As such, everything you see is available for perusal in your browser -- for inst
     <th>Value</th>
   </tr>
   <tr>
-    <td>Alfreds Futterkiste</td>
-    <td>Maria Anders</td>
+    <td>IP Address</td>
+    <td id="ipaddr"></td>
   </tr>
   <tr>
-    <td>Centro comercial Moctezuma</td>
-    <td>Francisco Chang</td>
+    <td>Rough Location</td>
+    <td id="location"></td>
   </tr>
   <tr>
-    <td>Ernst Handel</td>
-    <td>Roland Mendel</td>
+    <td>Browser Language</td>
+    <td id="lang"></td>
   </tr>
   <tr>
-    <td>Island Trading</td>
-    <td>Helen Bennett</td>
-  </tr>
-  <tr>
-    <td>Laughing Bacchus Winecellars</td>
-    <td>Yoshi Tannamuri</td>
-  </tr>
-  <tr>
-    <td>Magazzini Alimentari Riuniti</td>
-    <td>Giovanni Rovelli</td>
+    <td>Browser Platform</td>
+    <td id="plat"></td>
   </tr>
 </table>
 
@@ -91,6 +81,30 @@ As such, everything you see is available for perusal in your browser -- for inst
 
         }
     }
+
+    function setAttrs() {
+        var ip = document.getElementById("ipaddr");
+        var location = document.getElementById("location");
+        var llocation = document.getElementById("llocation");
+        var lang = document.getElementById("lang");
+        var plat = document.getElementById("plat");
+
+        lang.innerHTML = navigator.language;
+        plat.innerHTML = navigator.platform;
+        fetch("http://ip-api.com/json/").then(function (response) {
+            return response.json();
+        }).then(function (data) {
+            ip.innerHTML = data.query;
+            location.innerHTML = `${data.city}, ${data.region}, ${data.countryCode}`
+            llocation.innerHTML = `${data.lat}, ${data.lon}`
+        }).catch(function (err) {
+            ip.innerHTML = "Unable to fetch IP Address";
+            location.innerHTML = "also unable to determine rough location";
+            llocation.innerHTML = "you get the gist of it";
+        });
+        
+    }
+
     document.addEventListener('DOMContentLoaded', (event) => {
         checkCookie();
     });
