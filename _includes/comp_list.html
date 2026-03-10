@@ -5,7 +5,7 @@
         <span class="home-date">
           {{ comp.date | date: site.theme_config.date_format }}»
         </span>
-        <a href="{{ post.url | relative_url }}">{{ comp.title }}</a>
+        <a href="{{ comp.url | relative_url }}">{{ comp.title }}</a>
       </li>
     {% endfor %}
   </ul>
