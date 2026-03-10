@@ -1,0 +1,12 @@
+{% if site.competitions.size > 0 %}
+  <ul>
+    {% for comp in site.competitions %}
+      <li class="post-list-item">
+        <span class="home-date">
+          {{ comp.date | date: site.theme_config.date_format }}»
+        </span>
+        <a href="{{ post.url | relative_url }}">{{ comp.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}
