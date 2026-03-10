@@ -5,6 +5,9 @@ navbar_entries:
   - title: blog
     url: blog
 
+  - title: competitions
+    url: competitions
+
   - title: linkedin
     url: https://www.linkedin.com/in/daniel-gaevskiy
 
