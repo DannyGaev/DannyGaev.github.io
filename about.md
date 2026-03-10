@@ -15,11 +15,11 @@ You may have caught that em-dash, you'll be seeing more of them. I know it's pre
 take that away from me.
 
 <br>
-My name is Daniel Gaevskiy (shortened here to Gaev for ease of pronunciation). I am a Computer Science-turned-Cybersecurity student, 
-soon to have graduated from university. On this website you can find some of the <a href="https://dannygaev.com/projects/">Projects</a> I've completed, Capture The Flag (CTF) challenges
-I've solved and felt proud enough to <a href="https://dannygaev.com/writeups/">Write-Up</a>, and a look at the <a href="https://dannygaev.com/competitions/">Competitions</a> I've completed and how I approach them.
+My name is Daniel Gaevskiy (shortened here to Gaev for ease of pronunciation). I am a Computer Science-turned-Cybersecurity student at Loyola University Chicago (LUC), an NSF CyberCorps scholar, and the acting President of LUC's <a href="https://7968.org/#welcome">7968</a> Cybersecurity Competition club (how's that for OSINT fodder). 
 
-Pages will change depending on when you visit them, but all the code behind that is running client side for two noble reasons:
+On this website you can find some of the <a href="https://dannygaev.com/projects/">projects</a> I've completed, Capture The Flag (CTF) challenges I've solved and felt proud enough to write-up, and a look at the <a href="https://dannygaev.com/competitions/">competitions</a> I've completed and how I approach them.
+
+Pages will change depending on when, where, and how you visit them, but all the code behind that is running client side for two noble reasons:
 <ol>
   <li>There will be no server-side delinquency or sleight-of-byte, and</li>
   <li>This site runs off of GitHub Pages.</li>
