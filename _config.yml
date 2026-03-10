@@ -31,6 +31,7 @@ theme_config:
     title_projects: Projects
     title_misc_list: Details
     title_blog: Blog
+    title_competitions: Competitions
 
 highlighter: rouge
 
