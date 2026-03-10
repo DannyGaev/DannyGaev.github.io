@@ -2,7 +2,7 @@ title: DannyGaev
 author: Daniel Gaevskiy
 url: https://dannygaev.com # root address of the site
 description: > # description of the site (multiple lines allowed)
-  A personal site to post competition/project progress and other cyber fun
+  A personal site to post competition/project progress and other cyber fun. For information about who I am, check out the <a href="https://dannygaev.com/about">About</a> tab!
 permalink: /:slug
 
 favicon: "./favicon.png" # relative path to site's favicon
