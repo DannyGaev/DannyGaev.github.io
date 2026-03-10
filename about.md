@@ -95,11 +95,11 @@ As such, everything you see is available for perusal in your browser -- for inst
 
         lang.innerHTML = navigator.language;
         plat.innerHTML = navigator.platform;
-        fetch("http://ip-api.com/json/").then(function (response) {
+        fetch("https://api.ipify.org/?format=json").then(function (response) {
             return response.json();
         }).then(function (data) {
-            ip.innerHTML = data.query;
-            fetch(`https://api.hackertarget.com/geoip/?q=${data.query}&output=json`).then(function (response) {
+            ip.innerHTML = data.ip;
+            fetch(`https://api.hackertarget.com/geoip/?q=${data.ip}&output=json`).then(function (response) {
                 return response.json();
             }).then(function (data) {
                 location.innerHTML = `${data.city}, ${data.state}, ${data.country}`
