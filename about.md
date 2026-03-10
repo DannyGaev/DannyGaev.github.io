@@ -99,14 +99,18 @@ As such, everything you see is available for perusal in your browser -- for inst
             return response.json();
         }).then(function (data) {
             ip.innerHTML = data.query;
-            location.innerHTML = `${data.city}, ${data.region}, ${data.countryCode}`
-            llocation.innerHTML = `${data.lat}, ${data.lon}`
+            fetch(`https://api.hackertarget.com/geoip/?q=${data.query}&output=json`).then(function (response) {
+                return response.json();
+            }).then(function (data) {
+                location.innerHTML = `${data.city}, ${data.state}, ${data.country}`
+                llocation.innerHTML = `${data.latitude}, ${data.longitude}`
+            }).catch(function (err) {
+                location.innerHTML = "also unable to determine rough location";
+                llocation.innerHTML = "you get the gist of it";
+            });
         }).catch(function (err) {
             ip.innerHTML = "Unable to fetch IP Address";
-            location.innerHTML = "also unable to determine rough location";
-            llocation.innerHTML = "you get the gist of it";
         });
-        
     }
 
     document.addEventListener('DOMContentLoaded', (event) => {
