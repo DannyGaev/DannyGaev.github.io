@@ -1,0 +1,12 @@
+{% if site.projects.size > 0 %}
+<ul>
+    {% for proj in site.projects %}
+    <li class="post-list-item">
+        <span class="home-date">
+            {{ proj.date | date: site.theme_config.date_format }}»
+        </span>
+        <a href="{{ proj.url | relative_url }}">{{ proj.title }}</a>
+    </li>
+    {% endfor %}
+</ul>
+{% endif %}
