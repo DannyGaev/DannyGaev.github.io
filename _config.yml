@@ -11,6 +11,9 @@ collections:
   competitions:
     output: true
     permalink: /competitions/:title/
+  projects:
+    output: true
+    permalink: /projects/:title/
 
 #theme: moonwalk # if you are using GitHub Pages, change it to remote_theme: abhinavs/moonwalk
 remote_theme: abhinavs/moonwalk
