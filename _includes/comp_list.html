@@ -1,3 +1,5 @@
 {% if site.competitions.size > 0 %}
-  {% include proj_list.html collection=site.competitions %}
+<ul>
+  {% include card_list.html collection=site.competitions %}
+</ul>
 {% endif %}
