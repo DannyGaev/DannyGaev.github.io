@@ -20,7 +20,7 @@ project_entries:
     desc: A TypoSquatting Minefield
 
   - title: entry.B00M
-    url: projects/entryboom
+    url: projects/entryBoom
     desc: Muddying The Phisher's Net
 
   - title: Molemaker
