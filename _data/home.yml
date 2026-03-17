@@ -23,6 +23,10 @@ project_entries:
     url: entryboom
     desc: Muddying The Phisher's Net
 
+  - title: Molemaker
+    url: Molemaker
+    desc: Exfiltrating Exfiltrations
+
 footer_entries:
   - title: moonwalk's creator's homepage
     url: https://www.abhinav.co
