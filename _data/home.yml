@@ -16,15 +16,15 @@ navbar_entries:
 
 project_entries:
   - title: b00gle
-    url: boogle
+    url: projects/boogle
     desc: A TypoSquatting Minefield
 
   - title: entry.B00M
-    url: entryboom
+    url: projects/entryboom
     desc: Muddying The Phisher's Net
 
   - title: Molemaker
-    url: Molemaker
+    url: projects/Molemaker
     desc: Exfiltrating Exfiltrations
 
 footer_entries:
