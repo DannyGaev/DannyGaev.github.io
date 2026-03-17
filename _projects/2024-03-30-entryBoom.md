@@ -12,6 +12,12 @@ entry.B00M is an anonymous, easy-to-use tool for impeding scammers' phishing att
 
 The tool initially scrapes the Google Form's HTMl for instances of 'entry.ID', where the ID is a unique value that must be saved in order to send data to it.
 
-All data that is sent is generated via a mixture of sources: information that is more general (job title, etc.) are psuedo-randomly derived from a mixture of hardcoded values, while more sensitive data that may correspond to real people is generated as randomly as possible with external libaries and API queries. The result is a faux profile consisting of information that cannot be attributed to any one actual individual, and therefore further inhibits the scammers' datasets.
+All payload data is generated via a mixture of sources: more general information (job title, etc.) is psuedo-randomly derived from arrays of hardcoded values, while more sensitive data that may correspond to real people is generated as randomly as possible with external libaries and third-party API queries. The result is a faux profile consisting of information that cannot be attributed to any one actual individual, and therefore further inhibits the scammers' datasets.
+
+entry.B00M's combines these elements through four modules:
+
+![alt text](../assets/images/entryBoom/diagram.png)
+
+entry.B00M serves as the primary module through which the auxiliary modules are funnelled: one for information generation, payload delivery, and form scraping respectively. entry.B00M requires that the Tor Browser be installed on the user's machine, such that a Tor session may be opened to send and receive payload data with increased anonymity.
 
 Separately from impeding a scammer's imemdiate ability to either compromise accounts or sell collected data, entry.B00M strives to inject distrust into the economy of information selling. For every dataset containing large amounts of fraudulent data, the seller will be forced to restablish their credibility -- a trait always in devicit in such areas of the Internet.
