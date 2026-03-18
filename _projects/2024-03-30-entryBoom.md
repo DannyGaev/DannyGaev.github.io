@@ -16,7 +16,7 @@ All payload data is generated via a mixture of sources: more general information
 
 entry.B00M's combines these elements through four modules:
 
-![entry.B00M Diagram](/assets/images/entryBoom/diagram.png)
+![entry.B00M Diagram](/assets/images/entryBoom/entryBoomdiagram.png)
 
 entry.B00M serves as the primary module through which the auxiliary modules are funnelled: one for information generation, payload delivery, and form scraping respectively. entry.B00M requires that the Tor Browser be installed on the user's machine, such that a Tor session may be opened to send and receive payload data with increased anonymity.
 
