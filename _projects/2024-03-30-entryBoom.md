@@ -26,4 +26,8 @@ formScrape.py loads an HTML version of the targeted Google Form, and searches fo
 
 once all the IDs are collected, each reespective type of input field (text, multiple choice, etc.) is identified and the appropriate type of information is generated for the payload. Prior to actual payload delivery, a sample payload is presented to the user as a means to verify the data being sent and the fields that have been identified.
 
+When entry.B00M is finished running, succesfull payloads are tabulated and statistics are returned to the user relating the duration of the delivery and successful vs. denied requests. A sample of a 100% successful delivery may appear as follows:
+
+![Sample Run](/assets/images/entryBoom/sampleRun.png)
+
 Separate from impeding a scammer's immediate ability to compromise accounts or sell victim data, entry.B00M strives to inject distrust into the economy of information selling. For every dataset containing fraudulent data, the seller will be forced to re-establish their credibility -- a trait always in devicit amongst information traffickers.
