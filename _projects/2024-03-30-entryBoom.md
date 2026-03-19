@@ -20,4 +20,10 @@ entry.B00M's combines these elements through four modules:
 
 entryBoom.py serves as the primary module through which the auxiliary modules are funnelled: form scraping, payload generation, and payload delivery. entry.B00M requires that the Tor Browser be installed on the user's machine, such that a Tor session may be opened to send and receive payload data with increased anonymity.
 
+formScrape.py loads an HTML version of the targeted Google Form, and searches for each specific ID value corresponding to present entries:
+
+![Google Form Diagram](/assets/images/entryBoom/googleFormDiagram.png)
+
+once all the IDs are collected, each reespective type of input field (text, multiple choice, etc.) is identified and the appropriate type of information is generated for the payload. Prior to actual payload delivery, a sample payload is presented to the user as a means to verify the data being sent and the fields that have been identified.
+
 Separate from impeding a scammer's immediate ability to compromise accounts or sell victim data, entry.B00M strives to inject distrust into the economy of information selling. For every dataset containing fraudulent data, the seller will be forced to re-establish their credibility -- a trait always in devicit amongst information traffickers.
