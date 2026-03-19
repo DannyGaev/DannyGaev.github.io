@@ -30,4 +30,41 @@ When entry.B00M is finished running, succesfull payloads are tabulated and stati
 
 ![Sample Run](/assets/images/entryBoom/sampleRun.png)
 
+Of course, this success rate occurs with lower payload quantities (sub-1000). As the payload size increases, the number of unsuccesful payloads rises with relative consistency:
+
+<table>
+  <tr>
+    <th>Number of Requests</th>
+    <th>Time for Delivery (sec.)</th>
+    <th>Success Ratio (Success/Denied)</th>
+  </tr>
+  <tr>
+    <td>1000</td>
+    <td>116.72</td>
+    <td>1000/0</td>
+  </tr>
+  <tr>
+    <td>2000</td>
+    <td>222.14</td>
+    <td>2000/0</td>
+  </tr>
+  <tr>
+    <td>3000</td>
+    <td>327.51</td>
+    <td>2105/895</td>
+  </tr>
+  <tr>
+    <td>4000</td>
+    <td>562.71</td>
+    <td>778/3222</td>
+  </tr>
+  <tr>
+    <td>5000</td>
+    <td>537.95</td>
+    <td>2076/2924</td>
+  </tr>
+</table>
+
+
+
 Separate from impeding a scammer's immediate ability to compromise accounts or sell victim data, entry.B00M strives to inject distrust into the economy of information selling. For every dataset containing fraudulent data, the seller will be forced to re-establish their credibility -- a trait always in devicit amongst information traffickers.
