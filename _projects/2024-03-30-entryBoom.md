@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "entryB00M"
+title:  "entry.B00M"
 date:   2024-03-30
 desc: "Muddying The Phisher's Net"
 author: "OakTree"
@@ -8,15 +8,7 @@ categories: projects
 hide_preview: true
 ---
 
-<style>
-    table {
-        table-layout: fixed
-    }
-</style>
-
 entry.B00M is an anonymous, easy-to-use tool for impeding scammers' phishing attempts through POST requests en-masse. The goal of the project is to populate scammers' Google Forms with large amounts of false data such that real responses from victims are not apparent, and scammers become unwilling to trudge through their data to look for genuine responses. 
-
-The tool initially scrapes the Google Form's HTMl for instances of 'entry.ID', where the ID is a unique value that must be saved in order to send data to it.
 
 All payload data is generated via a mixture of sources: more general information (job title, etc.) is psuedo-randomly derived from arrays of hardcoded values, while more sensitive data that may correspond to real people is generated as randomly as possible with external libaries and third-party API queries. The result is a faux profile consisting of information that cannot be attributed to any one actual individual, and therefore further inhibits the scammers' datasets.
 
@@ -36,7 +28,7 @@ When entry.B00M is finished running, succesfull payloads are tabulated and stati
 
 ![Sample Run](/assets/images/entryBoom/sampleRun.png)
 
-Of course, this success rate occurs with lower payload quantities (sub-1000). As the payload size increases, the number of unsuccesful payloads rises with relative consistency:
+Of course, this success rate occurs with lower payload quantities (sub-1000). As the payload size increases, the number of unsuccesful payloads rises as well:
 
 <table style="table-layout: fixed; width: 100%;">
   <tr>
@@ -75,7 +67,5 @@ Of course, this success rate occurs with lower payload quantities (sub-1000). As
     <td>1986/3899</td>
   </tr>
 </table>
-
-
 
 Separate from impeding a scammer's immediate ability to compromise accounts or sell victim data, entry.B00M strives to inject distrust into the economy of information selling. For every dataset containing fraudulent data, the seller will be forced to re-establish their credibility -- a trait always in devicit amongst information traffickers.
