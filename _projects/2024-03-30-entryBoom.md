@@ -32,7 +32,7 @@ When entry.B00M is finished running, succesfull payloads are tabulated and stati
 
 Of course, this success rate occurs with lower payload quantities (sub-1000). As the payload size increases, the number of unsuccesful payloads rises with relative consistency:
 
-<table>
+<table style="table-layout: fixed; width: 100%;">
   <tr>
     <th>Number of Requests</th>
     <th>Time for Delivery (sec.)</th>
@@ -62,6 +62,11 @@ Of course, this success rate occurs with lower payload quantities (sub-1000). As
     <td>5000</td>
     <td>537.95</td>
     <td>2076/2924</td>
+  </tr>
+  <tr>
+    <td>6000</td>
+    <td>643.23</td>
+    <td>1986/3899</td>
   </tr>
 </table>
 
