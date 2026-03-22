@@ -8,6 +8,12 @@ categories: projects
 hide_preview: true
 ---
 
+<style>
+    table {
+        table-layout: fixed
+    }
+</style>
+
 entry.B00M is an anonymous, easy-to-use tool for impeding scammers' phishing attempts through POST requests en-masse. The goal of the project is to populate scammers' Google Forms with large amounts of false data such that real responses from victims are not apparent, and scammers become unwilling to trudge through their data to look for genuine responses. 
 
 The tool initially scrapes the Google Form's HTMl for instances of 'entry.ID', where the ID is a unique value that must be saved in order to send data to it.
