@@ -29,7 +29,7 @@ https://api.telegram.org/BOT_TOKEN/getChat?chat_id=BOT_CHANNEL_ID
 ```
 coupled with several other endpoints that allow for covering up proof of exfiltration, digestible logging and -- most importantlt -- deleted of any doubled messages during exfiltration (more on this later).
 
-When initiated, Molemaker will ask for the range of message IDs you wish to enumerate. This can be any range of values, though it is generally beneficial to start from 0-1000, and extend onward should this not be sufficient; the tool as it is now will continue attempting to enumerate messages even when none are detected, as the manner in which Telegram message IDs are assigned is not strictly incremental relative to the chat itself. That is to say, enumerating a message will increment the chat's message ID counter, such that to the original chat user the next message ID will appear to have skipped over one.
+When initiated, Molemaker will ask for the range of IDs corresponding to the messages you wish to enumerate. This can be any range of values, though it is generally beneficial to start from 0-1000, and extend onward should this not be sufficient; the tool as it is now will continue attempting to enumerate messages even when none are detected, as the manner in which Telegram message IDs are assigned is not strictly incremental relative to the chat itself. That is to say, enumerating a message will increment the chat's message ID counter, such that to the original chat user the next message ID will appear to have skipped over one.
 
 Molemaker is able to exfiltrate data in two modes:
 <ul>
