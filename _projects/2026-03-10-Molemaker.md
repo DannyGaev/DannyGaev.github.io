@@ -29,6 +29,19 @@ https://api.telegram.org/BOT_TOKEN/getChat?chat_id=BOT_CHANNEL_ID
 ```
 coupled with several other endpoints that allow for covering up proof of exfiltration, digestible logging and -- most importantlt -- deleted of any doubled messages during exfiltration (more on this later).
 
+Prior to executing molemaker.py, Molemaker requires that a config.json file is created in the same directory as the repository's code. config.json follows the format, consisting of token 'objects':
+
+```json
+{
+    "token#": {
+        "token": "bot...",
+        "chat_id": "#...",
+        "target": "True or False"
+    }
+}
+```
+The token and chat_id entires are required for Molemaker's operation, though you may add other entries to qualify the data (i.e., where the information was found, date, etc.) in order to support future threat analysis. The 'target' entry is necessary to distinguish between tokens that have already been enumerated, and ones that should be focused on during the current execution of Molemaker -- any token object with 'target' set to 'False' will not be addressed during enumeration. There is no limit on how many token objects can be added, only that they contain the three essential entries.
+
 When initiated, Molemaker will ask for the range of IDs corresponding to the messages you wish to enumerate. This can be any range of values, though it is generally beneficial to start from 0-1000, and extend onward should this not be sufficient; the tool as it is now will continue attempting to enumerate messages even when none are detected, as the manner in which Telegram message IDs are assigned is not strictly incremental relative to the chat itself. That is to say, enumerating a message will increment the chat's message ID counter, such that to the original chat user the next message ID will appear to have skipped over one.
 
 Molemaker is able to exfiltrate data in two modes:
