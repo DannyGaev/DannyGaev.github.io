@@ -14,6 +14,9 @@ collections:
   projects:
     output: true
     permalink: /projects/:title/
+  ics_posts:
+    output: true
+    permalink: /ics/:title/
 
 #theme: moonwalk # if you are using GitHub Pages, change it to remote_theme: abhinavs/moonwalk
 remote_theme: abhinavs/moonwalk
