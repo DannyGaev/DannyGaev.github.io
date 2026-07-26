@@ -4,3 +4,15 @@
 @import "moonwalk";
 @import "list";
 @import "syntax";
+
+.highlight {
+    width: 95%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.highlight pre {
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+}
