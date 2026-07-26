@@ -1,18 +1,15 @@
-
-
-
 ---
 layout: post
-title:  "Factory"
-date:   2026-06-03
-description: "Our infrastructure is under attack! The HMI interface went offline and we lost control of some critical PLCs in our ICS system. Moments after the attack started we managed to identify the target but did not have time to respond. The water storage facility's high/low sensors are corrupted thus setting the PLC into a halt state. We need to regain control and empty the water tank before it overflows. Our field operative has set a remote connection directly with the serial network of the system."
+title:  "Watch Tower"
+date:   2026-05-25
+description: "Our infrastructure monitoring system detected some abnormal behavior and initiated a network capture. We need to identify information the intruders collected and altered in the network."
 author: "OakTree"
 categories: writeups
 ---
 
-<h2> This is an Easy Hack The Box challenge from the ICS category </h2>
+<h2> This is a Very Easy difficulty Hack The Box challenge from the ICS category </h2>
 
-<p> "Our infrastructure is under attack! The HMI interface went offline and we lost control of some critical PLCs in our ICS system. Moments after the attack started we managed to identify the target but did not have time to respond. The water storage facility's high/low sensors are corrupted thus setting the PLC into a halt state. We need to regain control and empty the water tank before it overflows. Our field operative has set a remote connection directly with the serial network of the system."</p>
+<p> "Our infrastructure monitoring system detected some abnormal behavior and initiated a network capture. We need to identify information the intruders collected and altered in the network."</p>
 
 
 ```python
