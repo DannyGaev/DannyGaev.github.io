@@ -12,10 +12,10 @@ You may have caught that em-dash, you'll be seeing more of them. I know it's pre
     <option value="3">ChatGPT</option>
     <option value="4">Gemini</option>
 </select>
-take that away from me.
+take that away from me
 
 <br>
-My name is Daniel Gaevskiy (shortened here to Gaev for ease of pronunciation). I am a Computer Science-turned-Cybersecurity student at Loyola University Chicago (LUC), an NSF CyberCorps scholar, and the acting President of LUC's <a href="https://7968.org/#welcome">7968</a> Cybersecurity Competition club (how's that for OSINT fodder). 
+My name is Daniel Gaevskiy (shortened here to Gaev for ease of pronunciation). I am a Computer Science-turned-Cybersecurity student at Loyola University Chicago (LUC), an NSF CyberCorps scholar, and the former President of LUC's <a href="https://7968.org/#welcome">7968</a> Cybersecurity Competition club (how's that for OSINT fodder). 
 
 On this website you can find some of the <a href="https://dannygaev.com/projects">projects</a> I've completed, Capture The Flag (CTF) challenges I've solved and felt proud enough to write-up, and a look at the <a href="https://dannygaev.com/competitions">competitions</a> I've completed and how I approach them.
 
