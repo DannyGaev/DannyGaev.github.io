@@ -27,6 +27,10 @@ project_entries:
     url: projects/Molemaker
     desc: Exfiltrating Exfiltrations
 
+  - title: bilby
+    url: projects/bilby
+    desc: Data Exfiltration Via Reverse DNS Tunneling
+
 footer_entries:
   - title: moonwalk's creator's homepage
     url: https://www.abhinav.co
